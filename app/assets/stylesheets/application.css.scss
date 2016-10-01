@@ -39,7 +39,12 @@
 body {
 	font-family: 'Lato', sans-serif;
 	background-color: #edffe4;
-}
+	
+
+background: #457fca; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #457fca , #5691c8); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #457fca , #5691c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
 
 a {
 	color: darken(#e7e7e7, 70%);
@@ -47,7 +52,18 @@ a {
 
 .jumbotron {
 	text-align: center;
-	background-color:#eff089;
+	background-color:#365b96;
+	background:url("bgimage.jpg");
+	margin-top:0px;
+	margin-bottom:0px;
+	color:white;
+	padding-top:170px;
+	height:600px;
+	h1{
+		font-size:7em;
+		margin-top:-50px;
+		padding-bottom:20p;
+	}
 }
 .signbtn{
 	margin-top: 15px;
@@ -58,13 +74,21 @@ a {
 .navbar {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
+	height:40px;
+	
 }
 
 .navbar-default {
 
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #7cc37d;
+	background-color: #333;
+	
+
+// background: #457fca; /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #457fca , #5691c8); /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #457fca , #5691c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 
 	.navbar-nav > li > a {
 		color: #FFF;
@@ -81,7 +105,23 @@ a {
 	}
 
 }
+ul.nav a:hover { color: #FFF !important; }
+// 	.navbar-nav > li > a:hover {
+// 		.navbar-link {
+// 		color: Blue !important;
+// 	}
 
+// 	.navbar-brand {
+// 		color: #FFF;
+// 		letter-spacing: 1.25px;
+// 		font-size: 2.1em;
+// 	}
+// }
+hr{
+	width: 1000px;
+    margin-top: 0px;
+    margin-bottom:0px;
+}
 /* Item styles */
 
 .item {
@@ -160,4 +200,14 @@ button, .button {
 	border-radius: 0.1rem;
 	color: #FFF;
 	
+}
+
+
+//others
+.Loginwell {
+	margin-top:10px;
+	border-radius:2px;
+}
+#forgotbutton{
+	margin-top:2px;
 }
